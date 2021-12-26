@@ -24,6 +24,9 @@ html {
 .bd-bottom {
     border-bottom: rgba(57, 210, 247, 0.3) solid 1px;
 }
+.bd-link {
+    border-bottom: rgba(57, 210, 247,0) solid 3px;
+}
 .bd-link:hover {
     border-bottom: rgba(57, 210, 247) solid 3px;
 }
