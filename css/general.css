@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 13px;
+    line-height:1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bg-LT {
+    background-color: #222222;
+}
+.text-LT {
+    color: #39D2F7;
+}
+.text-link {
+    color: white;
+}
+.text-link:hover {
+    color: #39D2F7;
+}
+
+.bd-bottom {
+    border-bottom: rgba(57, 210, 247, 0.3) solid 1px;
+}
+.bd-link:hover {
+    border-bottom: rgba(57, 210, 247) solid 3px;
+}
+
+a {
+    text-decoration: none;
+    
+}
+a:hover {
+    color: #39D2F7;
+    text-decoration: none;
+}
