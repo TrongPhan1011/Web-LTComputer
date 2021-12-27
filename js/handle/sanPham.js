@@ -20,11 +20,11 @@ function loadSanPham(dsSanPham){
                             
                     <div class="card-body p-2">
                         <div class="sp-TenSP">
-                            <a href="#" class="card-title text-center a-item " >${sp.tenSP}</a>
+                            <a href="./chiTietSanPham.html?${key}=${sp.maSP}" class="card-title text-center a-item" >${sp.tenSP}</a>
                         </div>
                         <h5 class="card-title text-center text-danger fw-bold mt-2 mb-2">${giaSP} đ</h5>
                                 
-                        <a href="#" class="d-flex justify-content-center btn btn-LT">Xem chi tiết</a>
+                        <a href="./chiTietSanPham.html?${key}=${sp.maSP}" class="d-flex justify-content-center btn btn-LT">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
@@ -33,9 +33,18 @@ function loadSanPham(dsSanPham){
     DOMsp.innerHTML = renderSanPham.join('');
 }
 
+let spMap = document.getElementById('spMap');
+spMap.href = './sanPham.html?'+key;
+
 if(key == 'laptop'){
     loadSanPham(dsLapTop);
+    spMap.innerText = 'Laptop/'
 }
+else if(key == 'phukien'){
+    loadSanPham(dsPhuKien)
+    spMap.innerText = 'Phụ kiện/'
+}
+
 
 
 

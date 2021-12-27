@@ -7,10 +7,10 @@ const dsPhuKien = [
         gia : 5399900,
         soLuong: 100,
         urlAnh: [
-            '../assets/img/sp5/1',
-            '../assets/img/sp5/2',
-            '../assets/img/sp5/3',
-            '../assets/img/sp5/4'
+            '../assets/img/sp5/1.jpg',
+            '../assets/img/sp5/2.jpg',
+            '../assets/img/sp5/3.jpg',
+            '../assets/img/sp5/4.jpg'
         ]
     },
     {
@@ -21,10 +21,10 @@ const dsPhuKien = [
         gia : 4399900,
         soLuong: 100,
         urlAnh: [
-            '../assets/img/sp5/1',
-            '../assets/img/sp5/2',
-            '../assets/img/sp5/3',
-            '../assets/img/sp5/4'
+            '../assets/img/sp5/1.jpg',
+            '../assets/img/sp5/2.jpg',
+            '../assets/img/sp5/3.jpg',
+            '../assets/img/sp5/4.jpg'
         ]
     },
     {
@@ -35,10 +35,10 @@ const dsPhuKien = [
         gia : 6399900,
         soLuong: 100,
         urlAnh: [
-            '../assets/img/sp5/1',
-            '../assets/img/sp5/2',
-            '../assets/img/sp5/3',
-            '../assets/img/sp5/4'
+            '../assets/img/sp5/1.jpg',
+            '../assets/img/sp5/2.jpg',
+            '../assets/img/sp5/3.jpg',
+            '../assets/img/sp5/4.jpg'
         ]
     },
     {
@@ -49,10 +49,10 @@ const dsPhuKien = [
         gia : 299000,
         soLuong: 100,
         urlAnh: [
-            '../assets/img/sp6/1',
-            '../assets/img/sp6/2',
-            '../assets/img/sp6/3',
-            '../assets/img/sp6/4'
+            '../assets/img/sp6/1.jpg',
+            '../assets/img/sp6/2.jpg',
+            '../assets/img/sp6/3.jpg',
+            '../assets/img/sp6/4.jpg'
         ]
     },
     {
@@ -63,10 +63,10 @@ const dsPhuKien = [
         gia : 199000,
         soLuong: 100,
         urlAnh: [
-            '../assets/img/sp6/1',
-            '../assets/img/sp6/2',
-            '../assets/img/sp6/3',
-            '../assets/img/sp6/4'
+            '../assets/img/sp6/1.jpg',
+            '../assets/img/sp6/2.jpg',
+            '../assets/img/sp6/3.jpg',
+            '../assets/img/sp6/4.jpg'
         ]
     },
     {
@@ -77,10 +77,10 @@ const dsPhuKien = [
         gia : 259000,
         soLuong: 100,
         urlAnh: [
-            '../assets/img/sp6/1',
-            '../assets/img/sp6/2',
-            '../assets/img/sp6/3',
-            '../assets/img/sp6/4'
+            '../assets/img/sp6/1.jpg',
+            '../assets/img/sp6/2.jpg',
+            '../assets/img/sp6/3.jpg',
+            '../assets/img/sp6/4.jpg'
         ]
     },
     {
@@ -91,10 +91,10 @@ const dsPhuKien = [
         gia : 399000,
         soLuong: 100,
         urlAnh: [
-            '../assets/img/sp6/1',
-            '../assets/img/sp6/2',
-            '../assets/img/sp6/3',
-            '../assets/img/sp6/4'
+            '../assets/img/sp6/1.jpg',
+            '../assets/img/sp6/2.jpg',
+            '../assets/img/sp6/3.jpg',
+            '../assets/img/sp6/4.jpg'
         ]
     },
     {
@@ -105,10 +105,10 @@ const dsPhuKien = [
         gia : 1499900,
         soLuong: 100,
         urlAnh: [
-            '../assets/img/sp7/1',
-            '../assets/img/sp7/2',
-            '../assets/img/sp7/3',
-            '../assets/img/sp7/4'
+            '../assets/img/sp7/1.png',
+            '../assets/img/sp7/2.png',
+            '../assets/img/sp7/3.png',
+            '../assets/img/sp7/4.png'
         ]
     }
     ,
@@ -120,10 +120,10 @@ const dsPhuKien = [
         gia : 1299900,
         soLuong: 100,
         urlAnh: [
-            '../assets/img/sp7/1',
-            '../assets/img/sp7/2',
-            '../assets/img/sp7/3',
-            '../assets/img/sp7/4'
+            '../assets/img/sp7/1.png',
+            '../assets/img/sp7/2.png',
+            '../assets/img/sp7/3.png',
+            '../assets/img/sp7/4.png'
         ]
         
     },
@@ -135,10 +135,10 @@ const dsPhuKien = [
         gia : 1399900,
         soLuong: 100,
         urlAnh: [
-            '../assets/img/sp7/1',
-            '../assets/img/sp7/2',
-            '../assets/img/sp7/3',
-            '../assets/img/sp7/4'
+            '../assets/img/sp7/1.png',
+            '../assets/img/sp7/2.png',
+            '../assets/img/sp7/3.png',
+            '../assets/img/sp7/4.png'
         ]
     }
 ]
