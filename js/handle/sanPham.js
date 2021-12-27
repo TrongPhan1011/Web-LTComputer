@@ -20,11 +20,11 @@ function loadSanPham(dsSanPham){
                             
                     <div class="card-body p-2">
                         <div class="sp-TenSP">
-                            <a href="./chiTietSanPham.html?${key}=${sp.maSP}" class="card-title text-center a-item" >${sp.tenSP}</a>
+                            <a href="./chiTietSanPham.html?${key}&maSP=${sp.maSP}" class="card-title text-center a-item" >${sp.tenSP}</a>
                         </div>
                         <h5 class="card-title text-center text-danger fw-bold mt-2 mb-2">${giaSP} đ</h5>
                                 
-                        <a href="./chiTietSanPham.html?${key}=${sp.maSP}" class="d-flex justify-content-center btn btn-LT">Xem chi tiết</a>
+                        <a href="./chiTietSanPham.html?${key}&maSP=${sp.maSP}" class="d-flex justify-content-center btn btn-LT">Xem chi tiết</a>
                     </div>
                 </div>
             </div>

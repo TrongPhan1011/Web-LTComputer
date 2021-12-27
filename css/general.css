@@ -21,6 +21,12 @@ html {
     color: #39D2F7;
 }
 
+.text-justify {
+    text-align: justify;
+}
+.LT-heigh-120{
+    height: 120px;
+}
 .bd-bottom {
     border-bottom: rgba(57, 210, 247, 0.3) solid 1px;
 }
@@ -54,4 +60,5 @@ a:hover {
 }
 .btn-LT:hover {
     color: white;
+    border-color: white;
 }
