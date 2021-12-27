@@ -25,4 +25,7 @@
 nav .bd-link {
     margin: 0 10px;
 }
-
+.footer p {
+    font-size: 40px;
+    font-weight: bold;
+}

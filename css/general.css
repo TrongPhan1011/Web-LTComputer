@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html {
-    font-size: 13px;
+    font-size: 15px;
     line-height:1.6rem;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -31,6 +31,10 @@ html {
     border-bottom: rgba(57, 210, 247) solid 3px;
 }
 
+.bg-gradient-LT {
+    background-image: linear-gradient(rgba(2,2,2,0),rgba(2,2,2,0.7));
+}
+
 a {
     text-decoration: none;
     
@@ -38,4 +42,16 @@ a {
 a:hover {
     color: #39D2F7;
     text-decoration: none;
+}
+
+.btn-LT {
+    border-radius: 7px;
+    border: #39D2F7 solid 1px;
+    background-color: #222222;
+    color: #39D2F7;
+    font-weight: 500;
+    
+}
+.btn-LT:hover {
+    color: white;
 }
