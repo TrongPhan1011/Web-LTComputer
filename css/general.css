@@ -9,6 +9,10 @@ html {
     font-family: Arial, Helvetica, sans-serif;
    
 }
+.thongSoKT {
+    background-color: rgba(242,242,242,0.3);
+}
+
 .bg-LT {
     background-color: #222222;
 }
