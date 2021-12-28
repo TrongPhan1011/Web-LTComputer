@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../assets/font/fontawesome-free-5.15.4/css/all.css">
+    <link rel="stylesheet" href="../css/sanpham.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
@@ -56,7 +57,7 @@
             <nav class="navbar navbar-expand-sm justify-content-center ">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link text-link fs-5 bd-link" href="#">Trang chủ</a>
+                    <a class="nav-link text-link fs-5 bd-link" href="./index.html">Trang chủ</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-link fs-5 bd-link" href="./sanPham.html?laptop">Laptop</a>
@@ -76,78 +77,75 @@
         </div>
 
         <div id="content" class="p-3">
-            <!-- Carousel -->
-           <div id="slide" class="carousel slide" data-bs-ride="carousel">
-
-            <!-- Indicators/dots -->
-             <div class="carousel-indicators">
-               <button type="button" data-bs-target="#slide" data-bs-slide-to="0" class="active"></button>
-               <button type="button" data-bs-target="#slide" data-bs-slide-to="1"></button>
-               <button type="button" data-bs-target="#slide" data-bs-slide-to="2"></button>
+            <div class="mb-4">
+                <i>
+                <a href="./index.html">Trang chủ/ </a>
+                <a id="spMapCT" href="./">Chi tiết sản phẩm</a>
+                </i>
             </div>
-  
-            <!-- The slideshow/carousel -->
-           <div class="carousel-inner">
-             <div class="carousel-item active">
-               <img src="/assets/img/sp1/2.webp" alt="macbook" class="d-block" style="width:100%" height="800px">
-                 <div class="carousel-caption">
-        
+            <div class="row" id="infoSanPham">
+                <div class="col-6 p-5 pt-0">
+                    <div id="chiTietSP" class="carousel slide" data-bs-ride="carousel">
+
+                       
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../assets/img/sp1/1.webp" alt="img" class="d-block" style="width:100%">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/img/sp1/2.webp" alt="img" class="d-block" style="width:100%">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/img/sp1/3.webp" alt="img" class="d-block" style="width:100%">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/img/sp1/4.webp" alt="img" class="d-block" style="width:100%">
+                            </div>
+                        </div>
+ 
+                        <button class="carousel-control-prev" type="button" data-bs-target="#chiTietSP" data-bs-slide="prev">
+                            <i class="fas fa-angle-left text-LT fs-1"></i>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#chiTietSP" data-bs-slide="next">
+                            <i class="fas fa-angle-right text-LT fs-1"></i>
+                        </button>
+                    </div>
+                    
                 </div>
-             </div>
-             <div class="carousel-item">
-               <img src="/assets/img/sp2/2.jpg" alt="asus" class="d-block" style="width:100%" height="800px">
-                 <div class="carousel-caption">
-        
-                 </div> 
-             </div>
-            <div class="carousel-item">
-               <img src="/assets/img/sp3/3.jpg" alt="dell" class="d-block" style="width:100%" height="800px">
-                 <div class="carousel-caption">
-        
-                </div>  
+                <div class="col-6">
+                    
+                    <h4>MacBook Pro 13" 2020 Touch Bar</h4>                    
+                    <h3 class="text-danger fw-bold mt-3"> 53,999,000 đ</h3>
+                    <p class="text-justify LT-heigh-120">MacBook Pro 13 2020 phiên bản cao cấp sở hữu sức mạnh của bộ vi xử lý Intel thế hệ thứ 10 và bộ nhớ lên tới 1TB ổ cứng SSD, đáp ứng hoàn hảo cho công việc của bạn theo cách chuyên nghiệp hơn bao giờ hết.</p>
+                    <div class="col-3 ">
+                        <h5>Số lượng:</h5>
+                        <form action="#">
+                            <div class="input-group">
+                                <button type="button" class="input-group-text btn-danger">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <input type="text" class="form-control text-center" value="0">
+                                <button type="button" class="input-group-text btn-success">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                            
+                        </form>
+                       
+                    </div>
+                    <button type="button" class="btn col-4 btn-LT  mt-4">Mua ngay</button>
+                    <button type="button" class="btn col-3 btn-LT mt-4">Thêm vào giỏ</button>
+                </div>
             </div>
-         </div>
-  
-       <!-- Left and right controls/icons -->
-           <button class="carousel-control-prev " type="button" data-bs-target="#slide" data-bs-slide="prev">
-             <span class="carousel-control-prev-icon "></span>
-           </button>
-           <button class="carousel-control-next " type="button" data-bs-target="#slide" data-bs-slide="next">
-            <span class="carousel-control-next-icon "></span>
-          </button>
-        </div>
-        <div id="xuhuong" class="trend">
 
-          <div class="trend-left col-6">
-            <div class="content-title-laptop col-6"> 
-              <p class="fw-bold h5 p-3">Xu hướng 2020 </p>
-              <h3>Laptop</h3>
-
-            </div>
-            <div class="content-image-laptop col-6">
-              <div class="image">
-                <img class="img-size" src="/assets/img/sp1/1.webp"/>
-              </div>
-
-            </div>
-          </div>
-          <div class="trend-right col-6">
-            <div class="content-title-phukien col-6"> 
-              <p class="fw-bold h5 p-3">Xu hướng 2020 </p>
-              <h3>Phụ kiện</h3>
-            </div>
-            <div class="content-image-phukien col-6">
-              <div class="image">
-              <img class="img-size" src="/assets/img/sp5/1.jpg"/>
-            </div>
-            </div>
-          </div>
-        </div> 
+                
+            
             </div>
         </div>
+
         <div id="footer">
             
-             <div class="pt-3 pb-3 bd-bottom bg-LT">
+             <div class=" pt-3 pb-3 bd-bottom bg-LT">
              <div class="">
                     <h1 class="text-LT h-100 fw-normal p-2">LTComputer</h1>
              </div>
@@ -179,5 +177,13 @@
             </div>
         </div>
     </div>
+    <script src="../js/data/dsKhachHang.js"></script>
+    <script src="../js/data/dsLaptop.js"></script>
+    <script src="../js/data/dsPhuKien.js"></script>
+    <script src="../js/data/dsThongSoKyThuat.js"></script>
+    <script src="../js/handle/chitietSP.js"></script>
+    
+    <script src="../js/handle/sanPham.js"></script>
+
 </body>
 </html>
