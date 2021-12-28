@@ -92,9 +92,9 @@ const dsLapTop = [
         soLuong: 100,
         urlAnh: [
             '../assets/img/sp4/1.jpg',
-            '../assets/img/sp4/2.jpg',
+            '../assets/img/sp4/2.webp',
             '../assets/img/sp4/3.jpg',
-            '../assets/img/sp4/4.jpg'
+            '../assets/img/sp4/4.webp'
         ]
     },
     {
@@ -106,9 +106,9 @@ const dsLapTop = [
         soLuong: 100,
         urlAnh: [
             '../assets/img/sp4/1.jpg',
-            '../assets/img/sp4/2.jpg',
+            '../assets/img/sp4/2.webp',
             '../assets/img/sp4/3.jpg',
-            '../assets/img/sp4/4.jpg'
+            '../assets/img/sp4/4.webp'
         ]
     }
     ,
@@ -177,9 +177,9 @@ const dsLapTop = [
         soLuong: 100,
         urlAnh: [
             '../assets/img/sp4/1.jpg',
-            '../assets/img/sp4/2.jpg',
+            '../assets/img/sp4/2.webp',
             '../assets/img/sp4/3.jpg',
-            '../assets/img/sp4/4.jpg'
+            '../assets/img/sp4/4.webp'
         ]
     },
     {
@@ -191,9 +191,9 @@ const dsLapTop = [
         soLuong: 100,
         urlAnh: [
             '../assets/img/sp4/1.jpg',
-            '../assets/img/sp4/2.jpg',
+            '../assets/img/sp4/2.webp',
             '../assets/img/sp4/3.jpg',
-            '../assets/img/sp4/4.jpg'
+            '../assets/img/sp4/4.webp'
         ]
     }
 ]

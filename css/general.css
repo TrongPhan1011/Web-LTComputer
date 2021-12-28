@@ -7,6 +7,7 @@ html {
     font-size: 15px;
     line-height:1.6rem;
     font-family: Arial, Helvetica, sans-serif;
+   
 }
 .bg-LT {
     background-color: #222222;
@@ -36,6 +37,12 @@ html {
 .bd-link:hover {
     border-bottom: rgba(57, 210, 247) solid 3px;
 }
+.bd-img {
+    border: 1px solid rgba(0,0,0,.125)
+}
+.bd-img:hover {
+    border: rgba(57, 210, 247) solid 1px;
+}
 
 .bg-gradient-LT {
     background-image: linear-gradient(rgba(2,2,2,0),rgba(2,2,2,0.7));
@@ -60,5 +67,6 @@ a:hover {
 }
 .btn-LT:hover {
     color: white;
-    border-color: white;
+    
+    background-color: rgba(2,2,2,0.7);
 }
