@@ -128,6 +128,40 @@ function loadThongSoKTLapTop(dsSP){
     domKT.innerHTML = renderKT.join('');
 }
 
+function loadSanPhamTuongTu(dsSanPham){
+    let DOMsp = document.getElementById('sanPhamTuongTu');
+    let dom ='';
+    for(i=0;i<4;i++){
+        let sp = dsSanPham[i];
+        let giaSP = new Intl.NumberFormat('en-IN', { maximumSignificantDigits: 3 }).format(sp.gia);
+        dom += `
+            <div class="col-3 pt-0 p-2 ">
+                <div class="card sp" >
+                    <div class="sp-img">
+                        <img class="card-img-top sp-main-img" src="${sp.urlAnh[0]}" alt="Card image">
+                        <img class="card-img-top sp-sub-img" src="${sp.urlAnh[0]}" alt="Card image">
+                                
+                    </div>
+                            
+                    <div class="card-body p-2">
+                        <div class="sp-TenSP">
+                            <a href="./chiTietSanPham.html?${loai}&maSP=${sp.maSP}" class="card-title text-center a-item" >${sp.tenSP}</a>
+                        </div>
+                        <h5 class="card-title text-center text-danger fw-bold mt-2 mb-2">${giaSP} đ</h5>
+                                
+                        <a href="./chiTietSanPham.html?${loai}&maSP=${sp.maSP}" class="d-flex justify-content-center btn btn-LT">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+        `
+        
+    }
+    DOMsp.innerHTML = dom;
+
+    
+}
+
 function loadThongSoKTPhuKien(dsSP){
     let domKT = document.getElementById('tblBody');
     let renderKT = dsSP.map(function(sp){
@@ -167,9 +201,11 @@ spMapCT.href = './chiTietSanPham.html?'+loai+'&maSP='+ma;
 if(loai == 'laptop'){
     loadChiTietSanPham(dsLapTop);
     loadThongSoKTLapTop(dsTSKTLapTop);
+    loadSanPhamTuongTu(dsLapTop);
 }
 else if(loai == 'phukien'){
     loadChiTietSanPham(dsPhuKien)
     loadThongSoKTPhuKien(dsTSKTPhuKien)
+    loadSanPhamTuongTu(dsPhuKien);
 }
 
