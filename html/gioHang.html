@@ -40,15 +40,15 @@
                                  <button type="button" class="btn fs-1 ms-2"><i class="fas fa-user-alt text-LT"></i></button>
                              </div>
                              <div class="col-5">
-                                 <a href="./dangNhap.html" class="nav-link text-link ">Đăng nhập</a>
+                                 <a href="#" class="nav-link text-link ">Đăng nhập</a>
                                  <a href="#" class="nav-link text-link">Đăng kí</a>
                              </div>
                              <div class="col-5 ">
-                                <a href="./gioHang.html" id="gioHang" class="btn fs-1 "> 
+                                <button type="button" id="gioHang" class="btn fs-1 "> 
                                      <i class="fas fa-shopping-cart text-white ">
                                      <div class="so-Luong-GioHang"><p id="soLuongGioHang" class="text-white">0</p></div>
                                     </i>
-                                 </a>
+                                 </button>
                                  
                              </div>
                          </div>
@@ -79,35 +79,100 @@
            
         </div>
 
-        <div id="content" class="p-3 row">
+        <div id="content" class="p-2 row">
             <div class="col-12">
                 <div class="mb-4">
                     <i>
                     <a href="./index.html">Trang chủ/ </a>
-                    <a id="spMapCT" href="./">Chi tiết sản phẩm</a>
+                    <a id="spMapCT" href="#">Giỏ hàng</a>
                     </i>
                 </div>
-    
-                <div class="row" id="infoSanPham"></div>
-                
-                <div class="thongSoKT">
-                    
-                    <h3 class="text-center pb-4">Thông số kỹ thuật</h3>
-                    <div class="tskt .row d-flex justify-content-around">
-                        <div class="col-7 ">
-                            <table class="table table-striped table-hover ">                    
-                                <tbody id="tblBody">
-                                  
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>                   
-                </div>
-                <h4 class="text-center pt-5 pb-2">Sản phẩm tương tự</h4>
-                <div class="d-flex justify-content-around pt-2">
-                    <div id="sanPhamTuongTu" class="col-10 d-flex flex-wrap "> </div>
+                <div class="row">
+                    <div class="col-9">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Sản phẩm</th>
+                                    <th class="text-center">Giá</th>
+                                    <th class="text-center">Số lượng</th>
+                                    <th class="text-center">Tổng tiền</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbodyGioHang" class="">
+                                <tr>
+                                    <td class="text-center">1</td>
+                                    <td>
+                                        <div class="row">
+                                            <div class="col-3 ">
+                                                <img src="../assets/img/sp1/1.webp" class="bd-img" width="70%" alt="sp">
+                                            </div>
+                                            <div class="col-9 d-flex align-items-center fw-bold">
+                                                <p>MacBook Pro 13" 2020 Touch Bar</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td >
+                                       <p>53,599,000đ</p> 
+                                    </td>
+                                    <td>
+                                        <form action="#">
+                                            <div class="input-group">
+                                                <button type="button" id="btnGiamSL" class=" d-flex justify-content-center input-group-text btn-danger">
+                                                    <i class="fas fa-minus"></i>
+                                                </button>
+                                                <input type="text"  class=" form-control text-center p-0"  value="1">
+                                                <button type="button" id="btnTangSL" class=" d-flex justify-content-center input-group-text btn-success">
+                                                    <i class="fas fa-plus"></i>
+                                                </button>
+                                            </div>
+                                            
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <h5>53,599,000đ</h5>
+                                    </td>
 
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <div class="col-3 bd-LT-left p-0">
+                        <div class="d-flex justify-content-between align-items-center m-1 p-2 bd-bottom">
+                            <h5>Tổng tiền:</h5>
+                            <h5 class="text-danger fw-bold">53,599,000đ</h5>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center m-1 p-2 bd-bottom">
+                            <h5 class="align-self-center">Giao hàng:</h5>
+                            <i class="text-secondary ">Miễn phí ship</i>
+                        </div>
+                        <div class=" row m-1 pb-3 bd-bottom">
+                            <h5 class="col-4 pe-0 align-self-center">Ưu đãi:</h5>
+                            <div class="col-8 ps-0 ">
+                                <form action="#" class="input-group">
+                                    <input type="text" class=" form-control" placeholder="Mã">
+                                    <button type="button" class=" btn btn-LT">Áp dụng</button>
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center m-1 mt-2 p-2 bd-bottom">
+                            <h5>Thành tiền:</h5>
+                            <h4 class="text-danger fw-bold">53,599,000đ</h4>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center  m-1 mt-2 p-2">
+                            <a href="#" class="btn btn-danger border-warning form-control">Mua ngay</a>
+                        </div>
+
+                    </div>
                 </div>
+
+                
+                
 
             </div>   
         </div>
