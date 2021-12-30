@@ -26,6 +26,13 @@ html {
     color: #39D2F7;
 }
 
+.text-LT-link {
+    color: #39D2F7;
+}
+.text-LT-link:hover {
+    color: red;
+}
+
 .text-justify {
     text-align: justify;
 }
