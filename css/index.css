@@ -30,69 +30,47 @@ nav .bd-link {
     font-weight: bold;
 }
 #content {
-margin: 10px;
+
 }
 
 .trend {
      width: 100%;
      min-height: 200px;
-     height: auto;
      display: inline-flex;
-     position: relative;
      padding: 25px;
-     
-
  }
  .trend-left {
-     position: absolute;
+    
      display: inline-flex;
      left: 200px;
-     height: 100%;
     padding-right: 45px;
      text-align: center;
-    width: 600px;
-   
-
  }
  .trend-right {
-    position: absolute;
+   
     display: inline-flex;
-    right: 200px;
-    height: 100%;
+    right: 200px; 
     border-left: 1px solid #ccc;
     text-align: center;
     padding-left: 45px;
-    width: 600px;
-   
-
+    
 }
 .content-title-laptop {
     background-color: black;
-    color: white;
     padding: 45px;
-    border-radius: 50px;
-}
-.content-image-laptop {
-    background-color: #fcf8f8;
-    
-}
-.content-title-phukien {
-    background-color: black;
-    color: white;
-    padding: 45px;
-    border-radius: 50px;
-}
-.content-image-phukien {
-    background-color: #fdfcfc;
+
 }
 
-.image {
-    margin: 20px;
-    border: 1px solid rgb(248, 247, 247);
+.content-title-phukien {
+    background-color: black;
+    padding: 45px;
+  
 }
+
 .img-size {
     height: 150px;
     width: 250px;
+    
 }
 
 
