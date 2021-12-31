@@ -26,6 +26,13 @@ html {
     color: #39D2F7;
 }
 
+.text-LT-link {
+    color: #39D2F7;
+}
+.text-LT-link:hover {
+    color: red;
+}
+
 .text-justify {
     text-align: justify;
 }
@@ -80,4 +87,10 @@ a:hover {
 }
 .bd-LT-left {
     border-left: #39D2F7 solid 1px;
+}
+
+.input-LT {
+    text-align: center;
+    border : none;
+    border-bottom: #39D2F7 solid 2px;
 }
