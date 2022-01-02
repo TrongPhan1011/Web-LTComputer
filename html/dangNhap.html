@@ -15,7 +15,7 @@
 <body>
     <div class="container-fluid p-0">
         
-        <img src="../assets/img/dangNhap/dangNhap.jpeg" alt="background"  class="bg-dangnhap-img" >
+      <img src="../assets/img/dangNhap/dangNhap.jpeg" alt="background"  class="bg-dangnhap-img" >
        
         <div class="pt-1 d-flex justify-content-center align-items-center align-items-center " style="height: 100vh;">
             <div class="form-dangnhap col-5 p-3 ps-4 pe-4" >
@@ -27,33 +27,36 @@
                 </div>
                 <h3 class="text-white text-center ">Đăng nhập</h3>   
                 
-                <form action="#" class="">
+                <form action="#" >
                     <div class="mb-3 mt-3">
                       <label for="emailUser" class="form-label text-LT">Email:</label>
-                      <input type="text" class="form-control " id="emailUser" placeholder="Nhập email" name="uname" >
+                      <input type="text" class="form-control  " id="emailUser" placeholder="Nhập email" name="uname"  >
         
-                      <div class="invalid-feedback text-white">* Email không đúng</div>
+                      <div  class=" invalid-feedback text-white">* Email không hợp lệ</div>
                     </div>
                     <div class="mb-3">
                       <label for="matKhauUser" class="form-label text-LT">Mật khẩu:</label>
-                      <input type="password" class="form-control" id="matKhauUser" placeholder="Nhập mật khẩu" name="pswd" >
+                      <input type="password" class="form-control" id="matKhauUser" placeholder="Nhập mật khẩu" name="pswd" required>
                       
-                      <div class="invalid-feedback text-white">* Mật khẩu không đúng</div>
+                      <div  class="invalid-feedback text-white">* Mật khẩu không đúng</div>
                     </div>
                     <div class="mb-1 d-flex justify-content-end pe-2">
                         <a href="#" class="text-link  "><i>Quên mật khẩu?</i> </a>
                       </div>
 
                     
-                    <button type="button" class="btn btn-danger border-warning form-control mt-4 mb-4">Đăng nhập</button>
+                    <button id="btnDangNhap" type="button" class="btn btn-danger border-warning form-control mt-4 mb-4">Đăng nhập</button>
                     <hr class="border-bottom">
                     <button type="button" class="btn btn-LT form-control mt-4 "><a href="./dangki.html">Tạo tài khoản</a> </button>
-
+                      
                   </form>
             
             </div>
         </div>
 
     </div>
+    <script src="../js/data/dsTaiKhoan.js"></script>
+    <script src="../js/handle/dangNhap.js"></script>
+
 </body>
 </html>
