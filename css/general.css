@@ -94,3 +94,11 @@ a:hover {
     border : none;
     border-bottom: #39D2F7 solid 2px;
 }
+
+.li-item {
+    color: #222222 ;
+}
+
+.li-item:hover {
+    color: #39D2F7;
+}

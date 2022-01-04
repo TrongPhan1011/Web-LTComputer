@@ -42,17 +42,17 @@ nav .bd-link {
  .trend-left {
     
      display: inline-flex;
-     left: 200px;
-    padding-right: 45px;
+    
+    
      text-align: center;
  }
  .trend-right {
    
     display: inline-flex;
-    right: 200px; 
+  
     border-left: 1px solid #ccc;
     text-align: center;
-    padding-left: 45px;
+   
     
 }
 .content-title-laptop {
@@ -72,6 +72,8 @@ nav .bd-link {
     width: 250px;
     
 }
+
+
 
 
 

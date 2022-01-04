@@ -41,7 +41,7 @@
                              </div>
                              <div class="col-5">
                                  <a href="./dangNhap.html" class="nav-link text-link ">Đăng nhập</a>
-                                 <a href="#" class="nav-link text-link">Đăng kí</a>
+                                 <a href="./dangki.html" class="nav-link text-link">Đăng kí</a>
                              </div>
                              <div class="col-5 ">
                                 <a href="./gioHang.html" id="gioHang" class="btn fs-1 "> 
@@ -93,19 +93,16 @@
                     <div class="col-2 pe-4">
                         <select name="Sapxep" id="SapXep" class="form-select">
                             <option value="0">Sắp xếp</option>
-                            <option value="1">Giá thấp đến cao</option>
-                            <option value="2">Giảm cao đến thấp</option>
+                            <option value="1">Thấp đến cao</option>
+                            <option value="2">Cao đến thấp</option>
                         </select>
                     </div>
                 </div>
                 <div class="row mt-2">
                     <div class="col-3">
-                        <ul class="col-9 mb-3 list-group">
-                            <li class="list-group-item"><a href="#" class="a-item" >Macbook</a></li>
-                            <li class="list-group-item"><a href="#" class="a-item">Asus</a></li>
-                            <li class="list-group-item"><a href="#" class="a-item">Dell</a></li>
-                            <li class="list-group-item"><a href="#" class="a-item" >HP</a></li>
-                          </ul>
+                        <ul id="danhMuc" class="col-9 mb-3 list-group">
+                           
+                        </ul>
                         <div class="col-9  list-group list-group-item" >
                             <h5 class="mb-3 text-center fw-bold" >Lọc sản phẩm</h5>
                             
@@ -118,14 +115,12 @@
                             </select>
     
                             <div class="fw-bold">Loại sản phẩm:</div>   
-                            <select name="loaiSP" id="loaiSP" class="form-select mb-3">
-                                <option value="0">Tất cả</option>
-                                <option value="1">Macbook</option>
-                                <option value="2">Dell</option>
+                            <select name="loaiSP" id="optLoaiSP" class="form-select mb-3">
+                                
                             </select>
     
                             <div class="fw-bold">Năm sản xuất:</div>   
-                            <select name="namSX" id="namSX" class="form-select mb-3">
+                            <select name="namSX" id="optNamSX" class="form-select mb-3">
                                 <option value="0">Tất cả</option>
                                 <option value="1">2021</option>
                                 <option value="2">2020</option>

@@ -58,11 +58,11 @@ function loadChiTietSanPham(dsSanPham){
                     <h5>Số lượng:</h5>
                     <form action="#">
                         <div class="input-group">
-                            <button type="button" class="input-group-text btn-danger">
+                            <button id="btnGiam" type="button" class="input-group-text btn-danger">
                                 <i class="fas fa-minus"></i>
                             </button>
-                            <input type="text" class="form-control text-center p-0" value="0">
-                            <button type="button" class="input-group-text btn-success">
+                            <input id= "txtSoLuong" type="text" class="form-control text-center p-0" value="0" readonly>
+                            <button id="btnTang" type="button" class="input-group-text btn-success">
                                 <i class="fas fa-plus"></i>
                             </button>
                         </div>
@@ -71,7 +71,7 @@ function loadChiTietSanPham(dsSanPham){
                 
                 </div>
                 <button type="button" class="btn col-4   mt-4 border-warning btn-danger">Mua ngay</button>
-                <button type="button" class="btn col-4  btn-LT mt-4">Thêm vào giỏ</button>
+                <button id="btnThemVaoGio" type="button" class="btn col-4  btn-LT mt-4">Thêm vào giỏ</button>
             </div>
                 `
         }
@@ -208,4 +208,60 @@ else if(loai == 'phukien'){
     loadThongSoKTPhuKien(dsTSKTPhuKien)
     loadSanPhamTuongTu(dsPhuKien);
 }
+
+function handleClickSoLuong(){
+    let txtSoLuong = document.getElementById('txtSoLuong');
+    let btnGiamSL = document.getElementById('btnGiam');
+    let btnTangSL = document.getElementById('btnTang');
+    
+    btnGiamSL.onclick = function(){
+        txtSoLuong.value = parseInt(txtSoLuong.value) - 1;
+        if(txtSoLuong.value <0){
+            txtSoLuong.value = 0;
+            alert('Vui lòng nhập số lượng lớn hơn 0');
+        }
+    }
+    btnTangSL.onclick = function(){
+        txtSoLuong.value = parseInt(txtSoLuong.value) + 1;
+     
+    }
+}
+handleClickSoLuong();
+
+function handleThemVaoGio(){
+    // 'LapTop.1,1' == 'Loai,maSP,SoLuong'
+    
+    let btnThemVaoGio = document.getElementById('btnThemVaoGio');
+    if(sessionStorage.getItem('dsMua') == null){
+        sessionStorage.setItem('dsMua','');
+    }
+    btnThemVaoGio.onclick = function (){
+        let soLuongMua = document.getElementById('txtSoLuong').value;
+        let dsMua = sessionStorage.getItem('dsMua');
+        dsMua = dsMua + `${loai},${ma},${soLuongMua};`;
+        sessionStorage.setItem('dsMua',dsMua);
+        
+        let soLuongGioDaMua = sessionStorage.getItem('soLuongGio');
+        soLuongGioDaMua = parseInt(soLuongGioDaMua) +parseInt(soLuongMua);
+        sessionStorage.setItem('soLuongGio',soLuongGioDaMua);
+        
+        handleSoLuongGioHang();
+
+    }
+
+}
+handleThemVaoGio();
+
+function handleSoLuongGioHang(){
+    let soLuongGioHang = document.getElementById('soLuongGioHang');
+    if(sessionStorage.getItem('soLuongGio') == null){
+        sessionStorage.setItem('soLuongGio','0');
+    }
+    soLuongGioHang.innerText = sessionStorage.getItem('soLuongGio');
+
+}
+handleSoLuongGioHang();
+
+
+
 

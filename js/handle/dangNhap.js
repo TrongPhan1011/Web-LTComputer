@@ -4,6 +4,12 @@ const emailUser = document.getElementById('emailUser');
 const spEmailDangNhap = document.getElementById('spEmailDangNhap');
 
 
+
+
+if(sessionStorage.getItem('trangThai')== null)
+    sessionStorage.setItem('trangThai','khong');
+
+
 function kiemTraValEmail(){
    
     if(emailUser.value == ''){
@@ -35,10 +41,11 @@ function handleDangNhap(){
         for(let i =0; i< dsTaiKhoan.length;i++){
             let pass = document.getElementById('matKhauUser').value;
             let mail = document.getElementById('emailUser').value;
-           
-
+        
             if(mail == dsTaiKhoan[i].email && pass == dsTaiKhoan[i].matKhau){
+                sessionStorage.setItem('trangThai','dangNhap');
                 location.assign('./index.html');
+
                 return true;
             }
             
