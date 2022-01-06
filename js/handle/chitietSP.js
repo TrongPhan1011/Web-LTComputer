@@ -3,12 +3,13 @@ let info = urlCTSP.substring(urlCTSP.indexOf('?') + 1);
 let loai = info.substring(0,info.indexOf('&'));
 
 let ma = info.substring(info.indexOf('=')+1);
+var numFormat = Intl.NumberFormat();
 
 let tenSanPham = '';
 function loadChiTietSanPham(dsSanPham){
     let DOMChiTiet = document.getElementById('infoSanPham');
     let renderSanPham = dsSanPham.map(function(sp){
-        let giaSP = new Intl.NumberFormat('en-IN', { maximumSignificantDigits: 3 }).format(sp.gia);
+        let giaSP = numFormat.format(sp.gia);
         if(sp.maSP == ma){ 
             tenSanPham = sp.tenSP;
             return`
@@ -133,7 +134,7 @@ function loadSanPhamTuongTu(dsSanPham){
     let dom ='';
     for(i=0;i<4;i++){
         let sp = dsSanPham[i];
-        let giaSP = new Intl.NumberFormat('en-IN', { maximumSignificantDigits: 3 }).format(sp.gia);
+        let giaSP = String(sp.gia).replace(/(.)(?=(\d{3})+$)/g,'$1,') ;
         dom += `
             <div class="col-3 pt-0 p-2 ">
                 <div class="card sp" >
@@ -229,7 +230,7 @@ function handleClickSoLuong(){
 handleClickSoLuong();
 
 function handleThemVaoGio(){
-    // 'LapTop.1,1' == 'Loai,maSP,SoLuong'
+ 
     
     let btnThemVaoGio = document.getElementById('btnThemVaoGio');
     if(sessionStorage.getItem('dsMua') == null){
@@ -237,15 +238,21 @@ function handleThemVaoGio(){
     }
     btnThemVaoGio.onclick = function (){
         let soLuongMua = document.getElementById('txtSoLuong').value;
-        let dsMua = sessionStorage.getItem('dsMua');
-        dsMua = dsMua + `${loai},${ma},${soLuongMua};`;
-        sessionStorage.setItem('dsMua',dsMua);
-        
-        let soLuongGioDaMua = sessionStorage.getItem('soLuongGio');
-        soLuongGioDaMua = parseInt(soLuongGioDaMua) +parseInt(soLuongMua);
-        sessionStorage.setItem('soLuongGio',soLuongGioDaMua);
-        
-        handleSoLuongGioHang();
+        if(soLuongMua != 0){
+            let dsMua = sessionStorage.getItem('dsMua');
+    
+            // sản phẩm lưu vào session theo dạng 'LapTop.1,1' == 'Loai,maSP,SoLuong '
+            dsMua = dsMua + `${loai},${ma},${soLuongMua} `;
+            sessionStorage.setItem('dsMua',dsMua);
+            
+            let soLuongGioDaMua = sessionStorage.getItem('soLuongGio');
+            soLuongGioDaMua = parseInt(soLuongGioDaMua) +1;
+            sessionStorage.setItem('soLuongGio',soLuongGioDaMua);
+            
+            handleSoLuongGioHang();
+
+        }
+        else alert('Số lượng phải lớn hơn 0')
 
     }
 
