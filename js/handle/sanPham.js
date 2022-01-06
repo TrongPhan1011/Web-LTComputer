@@ -2,6 +2,7 @@ let url = window.location.href;
 let key = url.substring(url.indexOf('?') + 1);
 var dsLoaiSP = ['Tất cả']; 
 let dsSanPhamTam ;
+var numFormat = Intl.NumberFormat();
 
 function handleSoLuongGioHang(){
     let soLuongGioHang = document.getElementById('soLuongGioHang');
@@ -17,7 +18,7 @@ function loadSanPham(dsSanPham){
     let DOMsp = document.getElementById('sanPham');
     let renderSanPham = dsSanPham.map(function(sp){
         if(sp!=null){ 
-            let giaSP = new Intl.NumberFormat('en-IN', { maximumSignificantDigits: 3 }).format(sp.gia);
+            let giaSP = numFormat.format(sp.gia);
 
             return `
                 <div class="col-3 pt-0 p-2 ">
@@ -32,8 +33,7 @@ function loadSanPham(dsSanPham){
                             <div class="sp-TenSP">
                                 <a href="./chiTietSanPham.html?${key}&maSP=${sp.maSP}" class="card-title text-center a-item" >${sp.tenSP}</a>
                             </div>
-                            <h5 class="card-title text-center text-danger fw-bold mt-2 mb-2">${giaSP} đ</h5>
-                                    
+                            <h5 class="card-title text-center text-danger fw-bold mt-2 mb-2">${giaSP} đ</h5>   
                             <a href="./chiTietSanPham.html?${key}&maSP=${sp.maSP}" class="d-flex justify-content-center btn btn-LT">Xem chi tiết</a>
                         </div>
                     </div>
