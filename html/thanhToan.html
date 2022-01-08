@@ -19,7 +19,7 @@
                 <div class="row  pt-1 bd-bottom bg-LT">
                     <p class="col-6 mb-1 text-white">12 Nguyễn Văn Bảo,P.4, Gò Vấp, TP.Hồ Chí Minh</p>
                      <div class="col-6 mb-0 d-flex flex-row-reverse">
-                         <a href="#" class="fab fa-github connect-logo text-LT h4"></a>
+                         <a href="https://github.com/TrongPhan1011/Web-LTComputer" class="fab fa-github connect-logo text-LT h4"></a>
                      </div>
                 </div>
                 <div class="row bd-bottom bg-LT">
@@ -70,7 +70,7 @@
                              <a class="nav-link text-link fs-5 bd-link" href="./lienhe.html">Liên hệ</a>
                          </li>
                          <li class="nav-item">
-                             <a class="nav-link text-link  fs-5 bd-link " href="#">Giới thiệu</a>
+                             <a class="nav-link text-link  fs-5 bd-link " href="./gioithieu.html">Giới thiệu</a>
                          </li>
                          </ul>
                      </nav>
@@ -119,23 +119,7 @@
                             <tbody id="tbodyGioHang" >
                                 <tr>    
                                     
-                                    <td>
-                                        <div class="row">
-                                            
-                                            <div class="col-8 d-flex align-items-center fw-bold">
-                                                <p>MacBook Pro 13" 2020 Touch Bar</p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td >
-                                       <p>53,599,000đ</p> 
-                                    </td>
-                                    <td class="text-center">
-                                       4
-                                    </td>
-                                    <td>
-                                        <h5>53,599,000đ</h5>
-                                    </td>
+                                   
 
                                 </tr>
                             </tbody>
@@ -146,7 +130,7 @@
                     <div class="col-3 bd-LT-left p-0">
                         <div class="d-flex justify-content-between align-items-center m-1 p-2 bd-bottom">
                             <h5>Tổng tiền:</h5>
-                            <h5 class="text-danger fw-bold">53,599,000đ</h5>
+                            <h5 id="tong-ThanhTien" class="text-danger fw-bold"></h5>
                         </div>
 
                         <div class="d-flex justify-content-between align-items-center m-1 p-2 bd-bottom">
@@ -166,10 +150,33 @@
                         </div>
                         <div class="d-flex justify-content-between align-items-center m-1 mt-2 p-2 bd-bottom">
                             <h5>Thành tiền:</h5>
-                            <h4 class="text-danger fw-bold">53,599,000đ</h4>
+                            <h4 id="thanhTien" class="text-danger fw-bold"></h4>
                         </div>
                         <div class="d-flex justify-content-between align-items-center  m-1 mt-2 p-2">
-                            <a href="#" class="btn btn-danger border-warning form-control">Đặt hàng</a>
+                            <button id="btnDatHang" type="button" class="btn btn-danger border-warning form-control" data-bs-toggle="modal" data-bs-target="#myModal">Đặt hàng</button>
+                            
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+
+                                    <div class="modal-header d-flex justify-content-center">
+                                      <h4 class="modal-title text-info ">Thanh toán thành công</h4>
+                                      
+                                    </div>
+                              
+                                    <!-- Modal body -->
+                                    <div class=" modal-body d-flex justify-content-center">
+                                      Cám ơn bạn đã mua hàng tại LT Computer!
+                                    </div>
+                              
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                      <a href="./index.html" class="btn btn-danger form-control" >Quay lại trang chủ</a>
+                                    </div>
+                              
+                                  </div>
+                                </div>
+                              </div>
                         </div>
 
                     </div>
@@ -222,6 +229,7 @@
     <script src="../js/data/dsKhachHang.js"></script>
     <script src="../js/data/dsLaptop.js"></script>
     <script src="../js/data/dsPhuKien.js"></script>
+    <script src="../js/handle/thanhToan.js"></script>
     
     
 

@@ -105,9 +105,9 @@ function renderDSSanPham(){
 
     for(let i = 0;i<arrayDS.length;i++){
         if(arrayDS[i] != ''){
-            let sp = arrayDS[i];
+            let sp = arrayDS[i];   // String
             let tbodyGioHang = document.getElementById('tbodyGioHang');
-            let arraySP = sp.split(',');    // 1 sản phẩm theo dạng mảng
+            let arraySP = sp.split(',');    // chia 1 sản phẩm theo dạng mảng
             let loaiSPMua = arraySP[0];
             let maSPMua = arraySP[1];
             let soLuongMua = arraySP[2];
