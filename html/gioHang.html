@@ -14,70 +14,79 @@
 </head>
 <body>
     <div id="container" class="container-fluid  " >
-        <div id="header" class="row" >
+        <div id="header" class="row">
             <div class="col-12">
-                <div class="row  pt-1 bd-bottom bg-LT">
-                    <p class="col-6 mb-1 text-white">12 Nguyễn Văn Bảo,P.4, Gò Vấp, TP.Hồ Chí Minh</p>
-                     <div class="col-6 mb-0 d-flex flex-row-reverse">
-                         <a href="https://github.com/TrongPhan1011/Web-LTComputer" class="fab fa-github connect-logo text-LT h4"></a>
-                     </div>
+              <div class="row  pt-1 bd-bottom bg-LT">
+                <p class="col-6 mb-1 text-white">12 Nguyễn Văn Bảo,P.4, Gò Vấp, TP.Hồ Chí Minh</p>
+                <div class="col-6 mb-0 d-flex flex-row-reverse">
+                  <a href="https://github.com/TrongPhan1011/Web-LTComputer" class="fab fa-github connect-logo text-LT h4"></a>
                 </div>
-                <div class="row bd-bottom bg-LT">
-                     <div class="col-3 text-center" >
-                         <h1 class="text-LT h-100 fw-normal p-2">LTComputer</h1>
-                     </div>
-                     <div class="col-6 pt-3" >
-                         <div class="input-group">
-                             <input type="text" class="form-control" placeholder="Nhập tên sản phẩm cần tìm">
-                             <button type="button" class="btn btn-info fw-bold">Tìm
-                                 <i class="fas fa-search"></i>
-                             </button>
-                         </div>
-                     </div>
-                     <div class="col-3">
-                         <div class="row">
-                             <div class="col-2">
-                                 <button type="button" class="btn fs-1 ms-2"><i class="fas fa-user-alt text-LT"></i></button>
-                             </div>
-                             <div class="col-5">
-                                 <a href="./dangNhap.html" class="nav-link text-link ">Đăng nhập</a>
-                                 <a href="./dangki.html" class="nav-link text-link">Đăng kí</a>
-                             </div>
-                             <div class="col-5 ">
-                                <button type="button" id="gioHang" class="btn fs-1 "> 
-                                     <i class="fas fa-shopping-cart text-white ">
-                                     <div class="so-Luong-GioHang"><p id="soLuongGioHang" class="text-white">0</p></div>
-                                    </i>
-                                 </button>
-                                 
-                             </div>
-                         </div>
-                     </div>
+              </div>
+              <div class="row bd-bottom bg-LT">
+                <div class="col-3 col-md-3 text-center div-logo">
+                  <h1 class="logo text-LT h-100 fw-normal p-2">LTComputer</h1>
                 </div>
-                <div class="row col bg-LT ">
-                     <nav class="navbar navbar-expand-sm justify-content-center ">
-                         <ul class="navbar-nav">
-                         <li class="nav-item">
-                             <a class="nav-link text-link fs-5 bd-link" href="./index.html">Trang chủ</a>
-                         </li>
-                         <li class="nav-item">
-                             <a class="nav-link text-link fs-5 bd-link" href="./sanPham.html?laptop">Laptop</a>
-                         </li>
-                         <li class="nav-item">
-                             <a class="nav-link text-link fs-5 bd-link" href="./sanPham.html?phukien">Phụ kiện</a>
-                         </li>
-                         <li class="nav-item">
-                             <a class="nav-link text-link fs-5 bd-link" href="./lienhe.html">Liên hệ</a>
-                         </li>
-                         <li class="nav-item">
-                             <a class="nav-link text-link  fs-5 bd-link " href="./gioithieu.html">Giới thiệu</a>
-                         </li>
-                         </ul>
-                     </nav>
+                <div class="col-8 col-md-6 pt-3">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Nhập tên sản phẩm cần tìm">
+                    <button type="button" class="btn btn-info fw-bold">Tìm
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>
                 </div>
+                <div class="col-4 col-md-3 ">
+                  <div class="row">
+                    
+                    <div class="col-7">
+                      <!-- <button type="button" class="btn fs-1 ms-2"><i class="fas fa-user-alt text-LT"></i></button> -->
+                      <a href="./dangNhap.html" class="nav-link text-link ">Đăng nhập</a>
+                      <a href="./dangki.html" class="nav-link text-link">Đăng kí</a>
+                    </div>
+                    <div class="col-5 p-0">
+                      <a href="./gioHang.html" id="gioHang" class="btn fs-1 ">
+                        <i class="fas fa-shopping-cart text-white ">
+                          <div class="so-Luong-GioHang">
+                            <p id="soLuongGioHang" class="text-white">0</p>
+                          </div>
+                        </i>
+                      </a>
+      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row col bg-LT ">
+                
+                <nav class="navbar navbar-expand-sm ">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <i class="fas fa-bars text-LT"></i>
+                  </button>
+      
+                  <div class="collapse navbar-collapse justify-content-center " id="collapsibleNavbar">
+      
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link text-link fs-5 bd-link" href="./index.html">Trang chủ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-link fs-5 bd-link" href="./sanPham.html?laptop">Laptop</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-link fs-5 bd-link" href="./sanPham.html?phukien">Phụ kiện</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-link fs-5 bd-link" href="./lienhe.html">Liên hệ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-link  fs-5 bd-link " href="./gioithieu.html">Giới thiệu</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+      
             </div>
-           
-        </div>
+          </div>
 
         <div id="content" class="p-2 row">
             <div class="col-12">
@@ -128,38 +137,39 @@
 
         <div id="footer " class="row">
             
-            <div class="col-12 p-0">
-                <div class="pt-3 pb-3 bd-bottom bg-LT">
-                    <div >
-                        <h1 class="text-LT h-100 fw-normal p-2">LTComputer</h1>
-                    </div>
-                    <div class="row m-lg-1 ps-5">  
-                    <div class="row col-5 ps-5">
-                        <p class="fw-bold h5 mb-1 text-white ">Thông tin liên hệ</p>
-                        <a class="fas fa-user-alt text-white mb-1" href="#">      12 Nguyễn Văn Bảo , Phường 4 , Gò Vấp , TP HCM</a>
-                        <br>
-                        <a class="fas fa-phone mb-1 text-white" href="#">         0915888868</a> 
-                        <a class="fas fa-comment-alt mb-1 text-white" href="#">      LTComputer@gmail.com</a>
-                    </div>
-                    <div class="row col-4 ps-5">
-                        <p class="fw-bold h5 mb-1 text-white">Liên kết</p>
-                        <a class=" mb-1 text-white" href="#">Laptop</a>
-                        <br>
-                        <a class=" mb-1 text-white" href="#">Phụ kiện</a> 
-                        <a class=" mb-1 text-white" href="#">Liên hệ</a>
-                        <a class=" mb-1 text-white" href="#">Giới thiệu</a>
-                    </div>
-                    <div class=" row col-3 ps-5" >
-                        <p class="fw-bold h5 mb-1 text-white" > Hỗ trợ</p>
-                        <a class=" mb-1 text-white" href="#">Hướng dẫn mua hàng</a>
-                        <br>
-                        <a class=" mb-1 text-white" href="#">Hướng dẫn thanh toán</a> 
-                        <a class=" mb-1 text-white" href="#">Chính sách bảo hành</a>
-                        <a class=" mb-1 text-white" href="#">Tư vấn khách hàng</a>
-                    </div>
+        
+            <div class=" col-12 pt-3 pb-3 bd-bottom bg-LT">
+                <div >
+                    <h1 class="text-LT h-100 fw-normal p-2">LTComputer</h1>
                 </div>
-            </div> 
-        </div>
+                <div class="row ">  
+                <div class="col-4 ps-5">
+                    <p class="fw-bold h5 mb-1 text-white ">Thông tin liên hệ</p>
+                    <a class=" text-white mb-1" href="#"><i class="fas fa-user-alt"></i> 12 Nguyễn Văn Bảo , Phường 4 , Gò Vấp , TP HCM</a>
+                    <br>
+                    <a class=" mb-1 text-white" href="#"><i class="fas fa-phone"></i> 0915888868</a> <br>
+                    <a class=" mb-1 text-white" href="#"><i class="fas fa-comment-alt"></i> LTComputer@gmail.com</a>
+                </div>
+                <div class=" col-4 ps-5">
+                    <p class="fw-bold h5 mb-1 text-white ">Liên kết</p>
+                    <a class=" mb-1 text-white" href="#">Laptop</a>
+                    <br>
+                    <a class=" mb-1 text-white" href="#">Phụ kiện</a> 
+                    <a class=" mb-1 text-white" href="#">Liên hệ</a>
+                    <a class=" mb-1 text-white" href="#">Giới thiệu</a>
+                </div>
+                <div class=" col-4 ps-5" >
+                    <p class="fw-bold h5 mb-1 text-white" > Hỗ trợ</p>
+                    <a class=" mb-1 text-white" href="#">Hướng dẫn mua hàng</a>
+                    <br>
+                    <a class=" mb-1 text-white" href="#">Hướng dẫn thanh toán</a> 
+                    <br>
+                    <a class=" mb-1 text-white" href="#">Chính sách bảo hành</a><br>
+                    <a class=" mb-1 text-white" href="#">Tư vấn khách hàng</a>
+                </div>
+            </div>
+        </div> 
+      </div>
        
     
     </div>

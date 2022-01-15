@@ -102,3 +102,27 @@ a:hover {
 .li-item:hover {
     color: #39D2F7;
 }
+
+@media (max-width:900px) {
+    /* html {
+        font-size: 13px;
+    } */
+    .logo {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 770px) {
+    .div-logo {
+        width: 100%;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    h5 {
+        font-size: 16px;
+    }
+    html {
+        font-size: 12px;
+    }
+}

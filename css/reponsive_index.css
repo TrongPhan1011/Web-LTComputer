@@ -1,0 +1,16 @@
+@media (max-width: 900px) {
+    
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 10px;
+    }
+    /* .div-slide {
+        height: 100px !important;
+    } */
+    .xuhuong {
+        height: 150px;
+    }
+    
+}

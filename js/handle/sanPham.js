@@ -21,7 +21,7 @@ function loadSanPham(dsSanPham){
             let giaSP = numFormat.format(sp.gia);
 
             return `
-                <div class="col-3 pt-0 p-2 ">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-0 p-2 ">
                     <div class="card sp" >
                         <div class="sp-img">
                             <img class="card-img-top sp-main-img" src="${sp.urlAnh[0]}" alt="Card image">

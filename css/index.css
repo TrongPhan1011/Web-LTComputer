@@ -29,49 +29,12 @@ nav .bd-link {
     font-size: 40px;
     font-weight: bold;
 }
-#content {
 
-}
+/* reponsive */
 
-.trend {
-     width: 100%;
-     min-height: 200px;
-     display: inline-flex;
-     padding: 25px;
- }
- .trend-left {
-    
-     display: inline-flex;
-    
-    
-     text-align: center;
- }
- .trend-right {
-   
-    display: inline-flex;
-  
-    border-left: 1px solid #ccc;
-    text-align: center;
-   
-    
-}
-.content-title-laptop {
-    background-color: black;
-    padding: 45px;
 
-}
 
-.content-title-phukien {
-    background-color: black;
-    padding: 45px;
-  
-}
 
-.img-size {
-    height: 150px;
-    width: 250px;
-    
-}
 
 
 

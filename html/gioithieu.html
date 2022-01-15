@@ -1,238 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LTComputer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/general.css">
-    <link rel="stylesheet" href="../css/gioithieu.css">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../assets/font/fontawesome-free-5.15.4/css/all.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
-    <div id="container" class="container-fluid" >
-        <div id="header" class="row" >
-            <div class="col-12">
-                <div class="row  pt-1 bd-bottom bg-LT">
-                    <p class="col-6 mb-1 text-white">12 Nguyễn Văn Bảo,P.4, Gò Vấp, TP.Hồ Chí Minh</p>
-                     <div class="col-6 mb-0 d-flex flex-row-reverse">
-                         <a href="https://github.com/TrongPhan1011/Web-LTComputer" class="fab fa-github connect-logo text-LT h4"></a>
-                     </div>
-                </div>
-                <div class="row bd-bottom bg-LT">
-                     <div class="col-3 text-center" >
-                         <h1 class="text-LT h-100 fw-normal p-2">LTComputer</h1>
-                     </div>
-                     <div class="col-6 pt-3" >
-                         <div class="input-group">
-                             <input type="text" class="form-control" placeholder="Nhập tên sản phẩm cần tìm">
-                             <button type="button" class="btn btn-info fw-bold">Tìm
-                                 <i class="fas fa-search"></i>
-                             </button>
-                         </div>
-                     </div>
-                     <div class="col-3">
-                         <div class="row">
-                             <div class="col-2">
-                                 <button type="button" class="btn fs-1 ms-2"><i class="fas fa-user-alt text-LT"></i></button>
-                             </div>
-                             <div class="col-5">
-                                 <a href="./dangNhap.html" class="nav-link text-link ">Đăng nhập</a>
-                                 <a href="./dangki.html" class="nav-link text-link">Đăng kí</a>
-                             </div>
-                             <div class="col-5 ">
-                              <a href="./gioHang.html" id="gioHang" class="btn fs-1 "> 
-                                   <i class="fas fa-shopping-cart text-white ">
-                                   <div class="so-Luong-GioHang"><p id="soLuongGioHang" class="text-white">0</p></div>
-                                  </i>
-                               </a>
-                               
-                           </div>
-                         </div>
-                     </div>
-                </div>
-                <div class="row col bg-LT ">
-                 <nav class="navbar navbar-expand-sm justify-content-center ">
-                     <ul class="navbar-nav">
-                       <li class="nav-item">
-                         <a class="nav-link text-link fs-5 bd-link" href="./index.html">Trang chủ</a>
-                       </li>
-                       <li class="nav-item">
-                         <a class="nav-link text-link fs-5 bd-link" href="./sanPham.html?laptop">Laptop</a>
-                       </li>
-                       <li class="nav-item">
-                         <a class="nav-link text-link fs-5 bd-link" href="./sanPham.html?phukien">Phụ kiện</a>
-                       </li>
-                       <li class="nav-item">
-                         <a class="nav-link text-link fs-5 bd-link" href="./lienhe.html">Liên hệ</a>
-                       </li>
-                       <li class="nav-item">
-                         <a class="nav-link text-link  fs-5 bd-link " href="./gioithieu.html">Giới thiệu</a>
-                       </li>
-                     </ul>
-                   </nav>
-                </div>
 
-           </div> 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LTComputer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/general.css">
+  <link rel="stylesheet" href="../css/gioithieu.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../assets/font/fontawesome-free-5.15.4/css/all.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div id="container" class="container-fluid">
+    <div id="header" class="row">
+      <div class="col-12">
+        <div class="row  pt-1 bd-bottom bg-LT">
+          <p class="col-6 mb-1 text-white">12 Nguyễn Văn Bảo,P.4, Gò Vấp, TP.Hồ Chí Minh</p>
+          <div class="col-6 mb-0 d-flex flex-row-reverse">
+            <a href="https://github.com/TrongPhan1011/Web-LTComputer" class="fab fa-github connect-logo text-LT h4"></a>
+          </div>
+        </div>
+        <div class="row bd-bottom bg-LT">
+          <div class="col-3 col-md-3 text-center div-logo">
+            <h1 class="logo text-LT h-100 fw-normal p-2">LTComputer</h1>
+          </div>
+          <div class="col-8 col-md-6 pt-3">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Nhập tên sản phẩm cần tìm">
+              <button type="button" class="btn btn-info fw-bold">Tìm
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-4 col-md-3 ">
+            <div class="row">
+              
+              <div class="col-7">
+                <!-- <button type="button" class="btn fs-1 ms-2"><i class="fas fa-user-alt text-LT"></i></button> -->
+                <a href="./dangNhap.html" class="nav-link text-link ">Đăng nhập</a>
+                <a href="./dangki.html" class="nav-link text-link">Đăng kí</a>
+              </div>
+              <div class="col-5 p-0">
+                <a href="./gioHang.html" id="gioHang" class="btn fs-1 ">
+                  <i class="fas fa-shopping-cart text-white ">
+                    <div class="so-Luong-GioHang">
+                      <p id="soLuongGioHang" class="text-white">0</p>
+                    </div>
+                  </i>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row col bg-LT ">
+          
+          <nav class="navbar navbar-expand-sm ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+              <i class="fas fa-bars text-LT"></i>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center " id="collapsibleNavbar">
+
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-link fs-5 bd-link" href="./index.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-link fs-5 bd-link" href="./sanPham.html?laptop">Laptop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-link fs-5 bd-link" href="./sanPham.html?phukien">Phụ kiện</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-link fs-5 bd-link" href="./lienhe.html">Liên hệ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-link  fs-5 bd-link " href="./gioithieu.html">Giới thiệu</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
 
-        <div id="content" class="row w-100">
-          
-            <div class="col-6 p-5">
-              <div class="d-flex justify-content-start w-100">
-              <!-- Carousel -->
-              <div id="spmoi" class="carousel slide d-flex" data-bs-ride="carousel">
+      </div>
+    </div>
+
+    <div id="content">
+      <div class="row">
+        <div class="col-6 p-5">
+          <div class="d-flex justify-content-start w-100">
+            <!-- Carousel -->
+            <div id="spmoi" class="carousel slide d-flex" data-bs-ride="carousel">
 
               <!-- Indicators/dots -->
-                 <div class="carousel-indicators">
-                   <button type="button" data-bs-target="#spmoi" data-bs-slide-to="0" class="active"></button>
-                   <button type="button" data-bs-target="#spmoi" data-bs-slide-to="1"></button>
-                   <button type="button" data-bs-target="#spmoi" data-bs-slide-to="2"></button>
-                 </div>
-  
-                  <!-- The slideshow/carousel -->
-                   <div class="carousel-inner " style="height: 60vh; max-width: 800px;">
-                      <div class="carousel-item active">
-                       <img src="/assets/img/gioithieu/5232665_trentay_macbookair_m1_tinhte-19.jpg" alt="1" class="d-block" style="width:100%; height: 60vh;" >
-                         <div class="carousel-caption">
-        
-                        </div>
-                       </div>
-                   <div class="carousel-item">
-                        <img src="/assets/img/gioithieu/danh-gia-macbook-air-m1-2020-7-min.jpg" alt="2" class="d-block" style="width:100%;height: 60vh;">
-                          <div class="carousel-caption">
-        
-                        </div> 
-                   </div>
-                   <div class="carousel-item">
-                        <img src="/assets/img/gioithieu/72-6jpg-6.jpg" alt="3" class="d-block" style="width:100%;height: 60vh;" >
-                         <div class="carousel-caption">
-        
-                         </div>  
-                   </div>
-                   </div>
-  
-                   <!-- Left and right controls/icons -->
-                  <button class="carousel-control-prev " type="button" data-bs-target="#spmoi" data-bs-slide="prev">
-             <span class="carousel-control-prev-icon "></span>
-             </button>
-                <button class="carousel-control-next " type="button" data-bs-target="#spmoi" data-bs-slide="next">
-                 <span class="carousel-control-next-icon "></span>
-                </button>
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#spmoi" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#spmoi" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#spmoi" data-bs-slide-to="2"></button>
               </div>
-             </div>
-            </div>
-           <div class="col-6 text-center p-5" >
-                  <h1>Sản phẩm hot nhất cửa hàng năm 2021</h1>
-               <p class="text-start">Mới đây chiếc Macbook mỏng nhất của Apple MacBook Air M1 đã được ưu ái nâng cấp bộ vi xử lý mới nhất do chính Apple phát triển Apple M1 chip, nó mang trong mình tốc độ nhanh hơn tới 3,5 lần và GPU được đẩy nhanh hơn 5 lần so với thế hệ chip trước. Chip mới Apple M1 cho khả năng quản lý Pin kéo dài nhất từ trước tới nay. Thiết kế mới trong bộ tản nhiệt đã không còn chiếc quạt gió quen thuộc.</p>
-               <div class="col-5 text-start">
-               <h3>Mô tả tóm tắt đặc tính</h3>             
-                 
-                   <p>Apple M1 chip with 8‑core CPU, 7‑core GPU, and 16‑core Neural Engine</p>
-                   <p>8GB unified memory</p>
-                   <p>256GB SSD storage¹</p>
-                   <p> Retina display with True Tone</p>   
-                   <p>Magic Keyboard</p>      
-                   <p> Touch ID</p>       
-                   <p>Force Touch trackpad</p>      
-                   <p>Thunderbolt / USB 4 ports</p>
-                 
-                </div>
-           </div>  
-           <div class="row">
-               <div class="gioithieu col-12 justify-content-center">
-                   <div class="text-center">
-                     <h1 class="text-LT h-100 fw-normal p-2">LTComputer</h1>
-                   </div>
-                   <div class="text-start">
-                     <p class="  fw-normal p-4 justify-content">Năm 2022, 2 nhà khoa học trẻ thành lập Công ty LTComputer với mong muốn xây dựng “một tổ chức kiểu mới, giàu mạnh bằng nỗ lực lao động sáng tạo
-                          trong khoa học kỹ thuật và công nghệ, làm khách hàng hài lòng, góp phần hưng thịnh quốc gia, đem lại cho mỗi thành viên của mình điều kiện phát triển 
-                          đầy đủ nhất về tài năng và một cuộc sống đầy đủ về vật chất, phong phú về tinh thần.”
-                          Không ngừng đổi mới, liên tục sáng tạo và luôn tiên phong mang lại cho khách hàng các sản phẩm/ giải pháp/ dịch vụ công nghệ tối ưu nhất 
-                          đã giúp LTComputer phát triển mạnh mẽ trong những năm qua. FPT trở thành công ty công nghệ lớn nhất trong khu vực kinh tế tư nhân của Việt Nam với
-                          hơn 30.000 cán bộ nhân viên, trong đó có 18.000 nhân sự khối Công nghệ. Đồng thời, LTComputer cũng là doanh nghiệp dẫn đầu trong các lĩnh vực: Xuất khẩu phần mềm;
-                          Tích hợp hệ thống; Phát triển phần mềm; Dịch vụ CNTT. Hầu hết các hệ thống thông tin lớn trong các cơ quan nhà nước và các ngành kinh tế trọng điểm của Việt Nam
-                             đều do LTComputer xây dựng và phát triển.LTComputer sở hữu hạ tầng viễn thông phủ khắp 59/63 tỉnh thành tại Việt Nam và không ngừng mở rộng hoạt động trên thị trường 
-                             toàn cầu với 46 văn phòng tại 22 quốc gia và vùng lãnh thổ bên ngoài Việt Nam.Trong suốt quá trình hoạt động, LTComputer luôn nỗ lực với mục tiêu cao nhất là 
-                             mang lại sự hài lòng cho khách hàng thông qua những dịch vụ, sản phẩm và giải pháp công nghệ tối ưu nhất. Đồng thời, LTComputer không ngừng nghiên cứu và tiên phong 
-                             trong các xu hướng công nghệ mới góp phần khẳng định vị thế của Việt Nam trong cuộc cách mạng công nghiệp lần thứ 4 - Cuộc cách mạng số. LTComputer sẽ tiên phong cung 
-                             cấp dịch vụ chuyển đổi số toàn diện cho các tổ chức, doanh nghiệp trên quy mô toàn cầu.</p>
-                   </div>
-               </div>
-               <div class="thanhvien  justify-content-center">
-                   <div class="text-center text-LT">
-                       <h1>Thành viên</h1>
-                   </div>
-                   <div class="row">
-                   <div class="content-tv col-12">
-                     <div class="thanhvien1 col-6 justify-content-center" >
-                       <div class="tv1 "style="max-width: 260px;height: 350px;">
-                          <img class="card-img-top" src="../assets/img/thanhvien/tv1.png" alt="Card image" style="width:100%;height: 250px;">
-                          <div class="card-body">
-                            <h4 class="card-title">Hoàng Long-19443481</h4>
-                          </div>
-                        </div>
-                       </div> 
-                     
-                     <div class="thanhvien1 col-6 justify-content-center" >
-                       <div class="tv1 "style="max-width: 260px;height: 350px;">
-                        <img class="card-img-top" src="../assets/img/thanhvien/tv2.png" alt="Card image" style="width:100%;height: 250px;">
-                        <div class="card-body">
-                          <h4 class="card-title">Hữu Trọng-19475851</h4>
-                         
-                        </div>
-                       </div> 
-                     </div>
-                    </div>
+
+              <!-- The slideshow/carousel -->
+              <div class="carousel-inner " style="height: 60vh; max-width: 800px;">
+                <div class="carousel-item active">
+                  <img src="/assets/img/gioithieu/5232665_trentay_macbookair_m1_tinhte-19.jpg" alt="1" class="d-block"
+                    style="width:100%; height: 60vh;">
+                  <div class="carousel-caption">
+
                   </div>
-               </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/gioithieu/danh-gia-macbook-air-m1-2020-7-min.jpg" alt="2" class="d-block"
+                    style="width:100%;height: 60vh;">
+                  <div class="carousel-caption">
 
-           </div> 
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/gioithieu/72-6jpg-6.jpg" alt="3" class="d-block"
+                    style="width:100%;height: 60vh;">
+                  <div class="carousel-caption">
 
-           
+                  </div>
+                </div>
+              </div>
+
+              <!-- Left and right controls/icons -->
+              <button class="carousel-control-prev " type="button" data-bs-target="#spmoi" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon "></span>
+              </button>
+              <button class="carousel-control-next " type="button" data-bs-target="#spmoi" data-bs-slide="next">
+                <span class="carousel-control-next-icon "></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6  p-5">
+          <h1>Sản phẩm hot nhất cửa hàng năm 2021</h1>
+          <p class="text-justify ">Mới đây chiếc Macbook mỏng nhất của Apple MacBook Air M1 đã được ưu ái nâng cấp bộ vi
+            xử
+            lý mới nhất do chính Apple phát triển Apple M1 chip, nó mang trong mình tốc độ nhanh hơn tới 3,5 lần và GPU
+            được đẩy nhanh hơn 5 lần so với thế hệ chip trước. Chip mới Apple M1 cho khả năng quản lý Pin kéo dài nhất
+            từ
+            trước tới nay. Thiết kế mới trong bộ tản nhiệt đã không còn chiếc quạt gió quen thuộc.</p>
+
+        </div>
       </div>
 
-      <div id="footer " class="row">
-            
-        <div class="col-12 p-0">
-            <div class="pt-3 pb-3 bd-bottom bg-LT">
-                <div >
-                    <h1 class="text-LT h-100 fw-normal p-2">LTComputer</h1>
-                </div>
-                <div class="row m-lg-1 ps-5">  
-                <div class="row col-5 ps-5">
-                    <p class="fw-bold h5 mb-1 text-white ">Thông tin liên hệ</p>
-                    <a class="fas fa-user-alt text-white mb-1" href="#">      12 Nguyễn Văn Bảo , Phường 4 , Gò Vấp , TP HCM</a>
-                    <br>
-                    <a class="fas fa-phone mb-1 text-white" href="#">         0915888868</a> 
-                    <a class="fas fa-comment-alt mb-1 text-white" href="#">      LTComputer@gmail.com</a>
-                </div>
-                <div class="row col-4 ps-5">
-                    <p class="fw-bold h5 mb-1 text-white">Liên kết</p>
-                    <a class=" mb-1 text-white" href="#">Laptop</a>
-                    <br>
-                    <a class=" mb-1 text-white" href="#">Phụ kiện</a> 
-                    <a class=" mb-1 text-white" href="#">Liên hệ</a>
-                    <a class=" mb-1 text-white" href="#">Giới thiệu</a>
-                </div>
-                <div class=" row col-3 ps-5" >
-                    <p class="fw-bold h5 mb-1 text-white" > Hỗ trợ</p>
-                    <a class=" mb-1 text-white" href="#">Hướng dẫn mua hàng</a>
-                    <br>
-                    <a class=" mb-1 text-white" href="#">Hướng dẫn thanh toán</a> 
-                    <a class=" mb-1 text-white" href="#">Chính sách bảo hành</a>
-                    <a class=" mb-1 text-white" href="#">Tư vấn khách hàng</a>
-                </div>
-            </div>
-        </div> 
-    </div>
-   
 
-</div>
+      <div class="row">
+        <div class=" col-12 ">
+          <div class="text-center">
+            <h1 class="text-LT h-100  p-2">LTComputer</h1>
+
+            <p class=" text-justify p-4 ">Năm 2022, 2 nhà khoa học trẻ thành lập Công ty LTComputer với mong muốn xây
+              dựng “một tổ chức kiểu mới, giàu mạnh bằng nỗ lực lao động sáng tạo
+              trong khoa học kỹ thuật và công nghệ, làm khách hàng hài lòng, góp phần hưng thịnh quốc gia, đem lại cho
+              mỗi thành viên của mình điều kiện phát triển
+              đầy đủ nhất về tài năng và một cuộc sống đầy đủ về vật chất, phong phú về tinh thần.”
+              Không ngừng đổi mới, liên tục sáng tạo và luôn tiên phong mang lại cho khách hàng các sản phẩm/ giải pháp/
+              dịch vụ công nghệ tối ưu nhất
+              đã giúp LTComputer phát triển mạnh mẽ trong những năm qua. FPT trở thành công ty công nghệ lớn nhất trong
+              khu vực kinh tế tư nhân của Việt Nam với
+              hơn 30.000 cán bộ nhân viên, trong đó có 18.000 nhân sự khối Công nghệ. Đồng thời, LTComputer cũng là
+              doanh nghiệp dẫn đầu trong các lĩnh vực: Xuất khẩu phần mềm;
+              Tích hợp hệ thống; Phát triển phần mềm; Dịch vụ CNTT. Hầu hết các hệ thống thông tin lớn trong các cơ quan
+              nhà nước và các ngành kinh tế trọng điểm của Việt Nam
+              đều do LTComputer xây dựng và phát triển.LTComputer sở hữu hạ tầng viễn thông phủ khắp 59/63 tỉnh thành
+              tại Việt Nam và không ngừng mở rộng hoạt động trên thị trường
+              toàn cầu với 46 văn phòng tại 22 quốc gia và vùng lãnh thổ bên ngoài Việt Nam.Trong suốt quá trình hoạt
+              động, LTComputer luôn nỗ lực với mục tiêu cao nhất là
+              mang lại sự hài lòng cho khách hàng thông qua những dịch vụ, sản phẩm và giải pháp công nghệ tối ưu nhất.
+              Đồng thời, LTComputer không ngừng nghiên cứu và tiên phong
+              trong các xu hướng công nghệ mới góp phần khẳng định vị thế của Việt Nam trong cuộc cách mạng công nghiệp
+              lần thứ 4 - Cuộc cách mạng số. LTComputer sẽ tiên phong cung
+              cấp dịch vụ chuyển đổi số toàn diện cho các tổ chức, doanh nghiệp trên quy mô toàn cầu.</p>
+          </div>
+
+        </div>
+      </div>
+
     </div>
+    <div class="row">
+      <div class="col-12">
+
+        <div class="text-center text-LT mb-4">
+          <h1>Thành viên</h1>
+        </div>
+        <div class="row d-flex justify-content-around mb-4">
+         
+          <div class="card col-3 p-0">
+            <img class="card-img-top" src="../assets/img/thanhvien/tv1.png" alt="Card image" style="width:100%;height: 50vh;max-height: 400px;">
+            <div class="card-body">
+              <h4 class="card-title">Hoàng Long</h4>
+              <p class="card-text">Hoàng Long is an architect and engineer</p>
+              <a href="https://www.facebook.com/nguyenhoanglong1006" class="btn btn-LT form-control">Xem thông tin</a>
+            </div>
+          </div>
+
+          <div class="card col-3 p-0">
+            <img class="card-img-top" src="../assets/img/thanhvien/tv2.png" alt="Card image" style="width:100%;height: 50vh;max-height: 400px;">
+            <div class="card-body">
+              <h4 class="card-title">Hữu Trọng</h4>
+              <p class="card-text">Hữu Trọng is an architect and engineer</p>
+              <a href="https://www.facebook.com/phan.trong.319452/" class="btn btn-LT form-control">Xem thông tin</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="footer " class="row">
+  
+  
+      <div class=" col-12 pt-3 pb-3 bd-bottom bg-LT">
+        <div>
+          <h1 class="text-LT h-100 fw-normal p-2">LTComputer</h1>
+        </div>
+        <div class="row ">
+          <div class="col-4 ps-5">
+            <p class="fw-bold h5 mb-1 text-white ">Thông tin liên hệ</p>
+            <a class=" text-white mb-1" href="#"><i class="fas fa-user-alt"></i> 12 Nguyễn Văn Bảo , Phường 4 , Gò Vấp ,
+              TP HCM</a>
+            <br>
+            <a class=" mb-1 text-white" href="#"><i class="fas fa-phone"></i> 0915888868</a> <br>
+            <a class=" mb-1 text-white" href="#"><i class="fas fa-comment-alt"></i> LTComputer@gmail.com</a>
+          </div>
+          <div class=" col-4 ps-5">
+            <p class="fw-bold h5 mb-1 text-white ">Liên kết</p>
+            <a class=" mb-1 text-white" href="#">Laptop</a>
+            <br>
+            <a class=" mb-1 text-white" href="#">Phụ kiện</a>
+            <a class=" mb-1 text-white" href="#">Liên hệ</a>
+            <a class=" mb-1 text-white" href="#">Giới thiệu</a>
+          </div>
+          <div class=" col-4 ps-5">
+            <p class="fw-bold h5 mb-1 text-white"> Hỗ trợ</p>
+            <a class=" mb-1 text-white" href="#">Hướng dẫn mua hàng</a>
+            <br>
+            <a class=" mb-1 text-white" href="#">Hướng dẫn thanh toán</a>
+            <br>
+            <a class=" mb-1 text-white" href="#">Chính sách bảo hành</a><br>
+            <a class=" mb-1 text-white" href="#">Tư vấn khách hàng</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
 </body>
+
 </html>
